@@ -3,7 +3,6 @@ import React from 'react';
 import classes from './NavigationItem.css';
 
 const navigationItem = props => {
-    console.log(props.active, classes)
     return (
     <li className={classes.NavigationItem}>
         <a 

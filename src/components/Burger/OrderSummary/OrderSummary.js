@@ -1,9 +1,12 @@
 import React from 'react';
 
-import Aux from '../../../hoc/Auxilliary';
+import Aux from '../../../hoc/Auxilliary/Auxilliary';
 import Button from '../../UI/Button/Button';
 
 const orderSummary = props => {
+    console.log("OrderSummary rendered");
+    
+
     const ingredientsSummary = Object.keys(props.ingredients).map(igKey=>(
         <li key={igKey}>
             <span style={{textTransform: 'capitalize'}}>{igKey}</span> {props.ingredients[igKey]}
