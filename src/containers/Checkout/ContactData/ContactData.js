@@ -136,13 +136,6 @@ class ContactData extends Component {
       orderForm: updatedOrderForm,
       formIsValid 
     })
-
-    
-    console.log(
-      '[ContactData] inputChangedHandler element',
-      this.checkValidity(evt.target.value, this.state.orderForm[id].validation),
-      '\nformIsValid',formIsValid
-    )
   }
 
   checkValidity(value, rules) {

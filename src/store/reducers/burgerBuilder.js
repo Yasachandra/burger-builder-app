@@ -50,7 +50,7 @@ const setIngredients = (state, action) => {
   });
 };
 
-const fetchIngredientsFailed = (state, action) => updateObject(state, { error: true });
+const fetchIngredientsFailed = (state) => updateObject(state, { error: true });
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
